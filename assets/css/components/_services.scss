@@ -1,0 +1,31 @@
+/* Services Section CSS */
+.service {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  &__box {
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 15px 40px #f2f2f2;
+    border: 3px solid transparent;
+    transition: 0.3s;
+    &:hover {
+      border-bottom: 3px solid #ff7720;
+    }
+  }
+  &__icon {
+    display: inline-block;
+    font-size: 20px;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    border: 1px solid #eee;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  &__title {
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+  }
+}

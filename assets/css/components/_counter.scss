@@ -1,0 +1,26 @@
+/* Counter section CSS */
+.counter-section {
+  background-image: url("../../assets/img/subscribe/cta-bg.jpg");
+  @include bg;
+}
+.counter {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  &__box {
+    text-align: center;
+    color: #fff;
+  }
+  &__icon {
+    font-size: 35px;
+  }
+  &__increment {
+    font-size: 45px;
+    margin: 20px 0;
+  }
+  &__title {
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: capitalize;
+  }
+}

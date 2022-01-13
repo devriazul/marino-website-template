@@ -1,0 +1,88 @@
+/* Testimonial section CSS */
+.testimonial-section {
+  color: #fff;
+  background-image: url("../../assets/img/testimonials/test_back.jpg");
+  @include bg;
+}
+.testimonial {
+  &__box {
+    padding: 30px;
+    border: 1px solid #ddd;
+  }
+  &__icon {
+    font-size: 55px;
+  }
+  &__text {
+    margin: 20px 0;
+  }
+  &__author {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+    &__img {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+    }
+    &__name {
+      font-size: 20px;
+      text-align: left;
+    }
+    &__post {
+      font-size: 16px;
+    }
+  }
+  .slick-arrow {
+    background-color: #ff7720;
+    border: 0;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    &.slick-prev {
+      left: -70px;
+    }
+    &.slick-next {
+      right: -70px;
+    }
+    i {
+      font-size: 25px;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+    }
+  }
+
+  .slick-dots {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    li {
+      display: inline-block;
+      margin: 0 5px;
+      cursor: pointer;
+      &.slick-active {
+        button {
+          background-color: #ff7720;
+          color: #fff;
+        }
+      }
+      button {
+        background-color: #ddd;
+        border: 0;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        color: #333;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    }
+  }
+  .slick-slide {
+    margin: 0 15px;
+  }
+}

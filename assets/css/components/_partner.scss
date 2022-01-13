@@ -1,0 +1,16 @@
+/* Partner section CSS */
+.partner-section {
+  background: #f2f2f2f2;
+}
+.partners {
+  // display: grid;
+  // grid-template-columns: repeat(6, auto);
+  .parnter {
+    &.slick-slide {
+      margin: 0 15px;
+    }
+  }
+  &__img {
+    max-width: 150px;
+  }
+}

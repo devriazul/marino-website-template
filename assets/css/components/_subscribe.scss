@@ -1,0 +1,33 @@
+/* Subscibe section CSS */
+.subscribe-section {
+  background-image: url("../../assets/img/subscribe/cta-bg.jpg");
+  @include bg;
+  color: #fff;
+}
+.subscribe {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.form {
+  position: relative;
+  &__input {
+    font-size: 16px;
+    padding: 12px 20px;
+    width: 100%;
+    border-radius: 50px;
+  }
+  &__submit {
+    width: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 40px;
+    border-radius: 50px;
+    color: #fff;
+    background: #ff7720;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+  }
+}

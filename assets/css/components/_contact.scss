@@ -1,0 +1,46 @@
+/* Contact section CSS */
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  &__input {
+    padding: 10px 20px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 15px;
+    &:focus {
+      border: 1px solid #333;
+    }
+  }
+  &__textarea {
+    font-size: 15px;
+    width: 100%;
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    &:focus {
+      border: 1px solid #333;
+    }
+  }
+  &__submit {
+    width: 100%;
+    padding: 10px 40px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    background: #ff7720;
+    transition: 0.3s;
+    &:hover {
+      background: tomato;
+    }
+  }
+}

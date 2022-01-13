@@ -1,0 +1,46 @@
+/* Features Section CSS */
+.feature-section {
+  background: #f2f2f2;
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    background: #333;
+    opacity: 0.75;
+    z-index: 2;
+  }
+  &::after {
+    background-image: url("../../assets/img/features/feature-1.jpg");
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 50%;
+    top: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+  }
+}
+.feature {
+  width: 45%;
+  &__content {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+  }
+  &__icon {
+    font-size: 25px;
+  }
+  &__box__title {
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 20px 0;
+  }
+}

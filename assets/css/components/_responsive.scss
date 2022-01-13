@@ -1,0 +1,384 @@
+/* Responsive CSS */
+/* Applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+  .container {
+    width: 960px;
+  }
+  /* About section CSS */
+  .about {
+    &__img {
+      &::after {
+        display: none;
+      }
+    }
+  }
+}
+/* Applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  .container {
+    width: 720px;
+  }
+  /* Navigation CSS */
+  .nav {
+    &__list {
+      justify-content: center;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      width: 720px;
+      background: #333;
+      padding-top: 25px;
+      overflow: hidden;
+      z-index: 55;
+      clip-path: polygon(0 0, 100% 0%, 100% 0, 0 0);
+      transition: 0.3s;
+      &.active {
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+      }
+    }
+    &__item {
+      margin-bottom: 20px;
+    }
+    &__btn {
+      display: inline-block;
+    }
+  }
+  /* Banner section CSS */
+  .banner {
+    &__title {
+      font-size: 45px;
+    }
+  }
+  /* Feature section CSS */
+  .feature-section {
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+  .feature {
+    width: 100%;
+  }
+  /* Service section CSS */
+  .service {
+    grid-template-columns: 1fr 1fr;
+  }
+  /* Process section CSS */
+  .process {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* Project section CSS */
+  .project {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* Counter section CSS */
+  .counter {
+    grid-template-columns: repeat(4, auto);
+    &__increment {
+      margin-bottom: 10px;
+    }
+  }
+  /* Team section CSS */
+  .team {
+    gap: 20px;
+  }
+  /* Price section CSS */
+  .price {
+    gap: 20px;
+    &__box {
+      padding: 15px 8px;
+    }
+  }
+  /* Blog section CSS */
+  .blog {
+    gap: 20px;
+    &__meta {
+      margin: 0;
+      margin-bottom: 20px;
+    }
+    &__link {
+      font-size: 15px;
+    }
+  }
+  /* Contract section CSS */
+  .contact {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+/* Applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .container {
+    width: 540px;
+  }
+  .section-info {
+    margin: 0 auto 50px;
+  }
+  .pt-100 {
+    padding-top: 60px;
+  }
+  .pb-100 {
+    padding-bottom: 60px;
+  }
+  .pt-80 {
+    padding-top: 40px;
+  }
+  .pb-80 {
+    padding-bottom: 40px;
+  }
+  /* Navigation CSS */
+  .nav {
+    &__list {
+      width: 540px;
+    }
+  }
+  /* Banner section CSS */
+  .banner {
+    &__title {
+      font-size: 30px;
+      line-height: 24px;
+    }
+  }
+  /* About section CSS */
+  .about {
+    &__top {
+      grid-template-columns: auto;
+    }
+    &__img {
+      &::after {
+        display: block;
+        right: -14px;
+        bottom: 14px;
+      }
+    }
+    &__bottom {
+      grid-template-columns: 1fr;
+      margin-top: 45px;
+    }
+  }
+  /* Feature section CSS */
+  .feature {
+    &__content {
+      gap: 30px;
+    }
+    &__box {
+      &__title {
+        font-size: 20px;
+        margin: 10px 0;
+      }
+    }
+    &__icon {
+      font-size: 20px;
+    }
+  }
+  /* Counter section CSS */
+  .counter {
+    grid-template-columns: repeat(2, auto);
+    &__icon {
+      font-size: 30px;
+    }
+    &__increment {
+      font-size: 30px;
+      margin: 10px 0;
+    }
+  }
+  /* Team section CSS */
+  .team {
+    grid-template-columns: 1fr 1fr;
+  }
+  /* Video section CSS */
+  .video {
+    &__title {
+      font-size: 30px;
+      margin: 15px 0;
+    }
+  }
+  /* Price section CSS */
+  .price {
+    grid-template-columns: 1fr 1fr;
+
+    &__box {
+      &:nth-child(2) {
+        &.active {
+          transform: translateY(0);
+        }
+        &:hover {
+          transform: translateY(-20px);
+        }
+      }
+    }
+  }
+  /* Testimonial section CSS */
+  .testimonial-section {
+    padding-bottom: 90px;
+  }
+  .testimonial {
+    &__author {
+      justify-content: center;
+      &__post {
+        font-size: 16px;
+        display: block;
+      }
+    }
+  }
+  /* Blog section CSS */
+  .blog {
+    grid-template-columns: 1fr 1fr;
+  }
+  /* Footer section CSS */
+  .footer {
+    &__creator {
+      font-size: 18px;
+    }
+  }
+}
+/* Applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .container {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .pt-100 {
+    padding-top: 40px;
+  }
+  .pb-100 {
+    padding-bottom: 40px;
+  }
+  .section-info {
+    margin: 0px auto 25px;
+    &__subtitle {
+      font-size: 18px;
+    }
+    &__title {
+      font-size: 30px;
+      padding-bottom: 6px;
+    }
+  }
+  /* Navigation section CSS */
+  .nav {
+    &__list {
+      width: 100%;
+      left: 0;
+    }
+  }
+  /* Banner section CSS */
+  .banner {
+    &__title {
+      font-size: 25px;
+      line-height: 35px;
+      margin: 15px 0;
+    }
+    &__btn {
+      &--border {
+        margin-left: 0;
+        margin-top: 20px;
+      }
+    }
+  }
+  /* About section CSS */
+  .about {
+    &__title {
+      margin-bottom: 12px;
+      font-size: 20px;
+    }
+    &__box {
+      &__title {
+        font-size: 20px;
+        margin: 10px 0;
+      }
+      &__btn {
+        margin-top: 10px;
+      }
+    }
+  }
+  /* Feature section CSS */
+  .feature {
+    &__content {
+      grid-template-columns: auto;
+      gap: 20px;
+    }
+  }
+  .service {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    &__icon {
+      margin-bottom: 15px;
+    }
+    &__title {
+      font-size: 20px;
+    }
+  }
+  /* Process section CSS */
+  .process {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  /* Project section CSS */
+  .project {
+    grid-template-columns: 1fr;
+  }
+  /* Counter section CSS */
+  .counter {
+    gap: 20px;
+    &__increment {
+      font-size: 25px;
+    }
+    &__title {
+      font-size: 18px;
+    }
+  }
+  /* Team section CSS */
+  .team {
+    grid-template-columns: 1fr;
+  }
+  /* Video section CSS */
+  .video {
+    &__title {
+      font-size: 25px;
+    }
+  }
+  /* Price section CSS */
+  .price {
+    grid-template-columns: 1fr;
+  }
+  /* Testimonial section CSS */
+  .testimonial-section {
+    padding-bottom: 80px;
+  }
+  .testimonial {
+    &__box {
+      padding: 10px 5px;
+    }
+    &__icon {
+      font-size: 40px;
+    }
+    &__text {
+      margin: 12px 0;
+    }
+  }
+  /* Blog section CSS */
+  .blog {
+    grid-template-columns: 1fr;
+    &__title {
+      font-size: 22px;
+    }
+    &__text {
+      margin: 12px 0;
+    }
+  }
+  /* Form section CSS */
+  .form {
+    &__submit {
+      width: 100%;
+      position: static;
+      margin-top: 20px;
+      top: 100%;
+    }
+  }
+  /* Partner section CSS */
+  .partners {
+    &__img {
+      max-width: 110px;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+/* Video section CSS */
+.video-section {
+  background-image: url("../../assets/img/testimonials/test_back.jpg");
+  @include bg;
+}
+.video {
+  color: #fff;
+  max-width: 600px;
+  margin: 0 auto;
+  &__popup {
+    color: #fff;
+    font-size: 45px;
+  }
+  &__title {
+    text-transform: uppercase;
+    font-size: 55px;
+    margin: 35px 0;
+  }
+}
